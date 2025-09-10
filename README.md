@@ -1,25 +1,47 @@
 
+# 🖼️ Image Classification with ANN vs CNN
 
-🖼️  Image Classification (ANN vs CNN)
+This project applies **image classification on the CIFAR-10 dataset** using two different approaches:  
+1. **Artificial Neural Network (ANN)**  
+2. **Convolutional Neural Network (CNN)**  
 
-```markdown
-# 
+The objective is to compare the performance of fully-connected vs convolutional models on small image datasets.
 
-This project implements image classification on the CIFAR-10 dataset using both an Artificial Neural Network (ANN) and a Convolutional Neural Network (CNN).  
-The goal is to compare performance of fully-connected vs convolutional approaches on small image datasets.
+---
+
+## 📊 Dataset
+- **CIFAR-10** dataset  
+- 60,000 color images (32x32 pixels each)  
+- 10 categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck  
 
 ---
 
 ## 🚀 Features
-- 📊 Dataset: **CIFAR-10** (60,000 32x32 color images, 10 classes)
-- 🧮 Models implemented:
-  - **ANN**: Flatten + Dense layers (ReLU, Sigmoid)
-  - **CNN**: Conv2D + MaxPooling + Dense layers
-- 📈 Training & evaluation using accuracy, loss, and classification reports
-- 📊 Visualizations: sample images, confusion matrix, predicted labels
-- ⚡ Comparison of ANN vs CNN performance
+- Data preprocessing (normalization)  
+- ANN model with fully connected layers  
+- CNN model with convolution + pooling layers  
+- Model evaluation with accuracy, loss, and classification report  
+- Visualizations:
+  - Sample images with labels  
+  - Confusion matrix  
+  - Predicted vs actual classes  
 
 ---
+
+## 🛠️ Models Implemented
+### 🔹 Artificial Neural Network (ANN)
+- Input: Flattened 32×32×3 images  
+- Dense layers with ReLU and Sigmoid activations  
+- Output: 10 neurons (Softmax for classification)  
+
+### 🔹 Convolutional Neural Network (CNN)
+- Conv2D layers with ReLU activation  
+- MaxPooling2D layers for downsampling  
+- Dense layers for classification  
+- Output: 10 neurons (Softmax for classification)  
+
+---
+
 
 ## 📂 Project Structure
 ```
